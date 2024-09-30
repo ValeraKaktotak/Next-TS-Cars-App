@@ -8,10 +8,10 @@
 
 ↪ Radix UI
 
-↪ Code Splitting
+↪ react-intersection-observer
+
+↪ react-countup
 
 ↪ Google Fonts
-
-↪ Easy Folder Structure
 
 ↪ Organized Code Structure
