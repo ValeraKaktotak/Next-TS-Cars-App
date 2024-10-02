@@ -1,6 +1,10 @@
 ## Framework & Library
 
-↪ Next TS 14+
+↪ React 18
+
+↪ Next 14+
+
+↪ TypeScript
 
 ↪ Tailwind CSS
 
