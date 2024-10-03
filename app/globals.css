@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-	section {
-		@apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 min-h-screen;
-	}
-}
-
 @layer base {
 	body {
 		@apply leading-relaxed;
+	}
+	section {
+		@apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 min-h-screen;
 	}
 	.page {
 		@apply w-full h-screen;
@@ -37,5 +34,11 @@
 	}
 	.textarea {
 		@apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+	}
+}
+
+@layer utilities {
+	.socialIcons {
+		@apply text-3xl cursor-pointer text-White p-2 bg-Black rounded-full;
 	}
 }
