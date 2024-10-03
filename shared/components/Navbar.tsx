@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { HiOutlineMenuAlt4, HiX } from 'react-icons/hi'
+import { IoLogoGooglePlaystore, IoLogoSkype, IoMailOpen } from 'react-icons/io5'
 
 //Mocked Data
 import { navLinks } from '@/shared/Data/Data'
@@ -56,8 +57,10 @@ const Navbar = () => {
 			>
 				<div className='flex justify-between items-center h-16'>
 					<Link href='/' className='text-3xl text-Black'>
-						Logo <span className='text-Red'>.</span>
+						App name <span className='text-Red'>.</span>
 					</Link>
+
+					{/* Desktop navbar */}
 					<div className='hidden md:flex items-center justify-center space-x-6'>
 						{navLinks.map((navLink, i) => (
 							<Link
@@ -72,6 +75,8 @@ const Navbar = () => {
 							</Link>
 						))}
 					</div>
+
+					{/* Burger button */}
 					<div
 						className='flex md:hidden items-center'
 						onClick={() => setShowMenu(prev => !prev)}
@@ -81,6 +86,7 @@ const Navbar = () => {
 				</div>
 			</nav>
 
+			{/* Mobile navbar background */}
 			<motion.div
 				variants={menuVariants}
 				initial='hidden'
@@ -88,6 +94,7 @@ const Navbar = () => {
 				className='bg-WhiteGray fixed top-0 right-0 w-16 h-16 rounded-full'
 			></motion.div>
 
+			{/* Mobile navbar */}
 			<motion.nav
 				variants={navLinkVariants}
 				initial='hidden'
@@ -98,7 +105,7 @@ const Navbar = () => {
 					<Link
 						key={i}
 						href={navLink.path}
-						className={`px-3 py-2 flex justify-center uppercase font-medium transition-all ${isActive(
+						className={`px-3 py-2 flex text-2xl justify-center uppercase font-medium transition-all ${isActive(
 							navLink.path,
 							pathname
 						)}`}
@@ -107,8 +114,35 @@ const Navbar = () => {
 						{navLink.label}
 					</Link>
 				))}
+
+				{/* Social */}
+				<div className='mt-6 flex justify-center items-center flex-row gap-4'>
+					<Link
+						href={'https://www.googleplay.com'}
+						target={'_blank'}
+						className='socialIcons'
+					>
+						<IoLogoGooglePlaystore />
+					</Link>
+					<Link
+						href={'https://www.googleplay.com'}
+						target={'_blank'}
+						className='socialIcons'
+					>
+						<IoLogoSkype />
+					</Link>
+					<Link
+						href={'https://www.googleplay.com'}
+						target={'_blank'}
+						className='socialIcons'
+					>
+						<IoMailOpen />
+					</Link>
+				</div>
+
+				{/* Close icon */}
 				<HiX
-					className='absolute text-Black top-11 right-5 w-6 h-6 cursor-pointer'
+					className='absolute text-Black top-6 right-5 w-6 h-6 cursor-pointer'
 					onClick={() => setShowMenu(prev => !prev)}
 				/>
 			</motion.nav>
