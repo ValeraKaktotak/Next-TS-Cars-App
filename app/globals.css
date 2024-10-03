@@ -42,3 +42,12 @@
 		@apply text-3xl cursor-pointer text-White p-2 bg-Black rounded-full;
 	}
 }
+
+body::-webkit-scrollbar {
+	width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #db2d2d;
+	border-radius: 6px;
+}
