@@ -1,4 +1,4 @@
-import type { CountUpItemsProps, NavLink } from '@/types'
+import type { CountUpItemsProps, NavLink, ProjectProps } from '@/types'
 
 const navLinks: NavLink[] = [
 	{ path: '/', label: 'Home' },
@@ -33,4 +33,49 @@ const countUpItems: CountUpItemsProps[] = [
 	},
 ]
 
-export { countUpItems, navLinks }
+const projects: ProjectProps[] = [
+	{
+		id: 1,
+		img: '/project1.jpg',
+		name: 'Porche Taycan Sport',
+		des: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero rem harum ut iure saepe maiores dicta! Quam optio quibusdam praesentium. Minima beatae enim odit quos fugiat ab provident explicabo.',
+		details: ['+ More Details'],
+	},
+	{
+		id: 2,
+		img: '/project2.jpg',
+		name: 'Rolls Royce Ghost 3',
+		des: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero rem harum ut iure saepe maiores dicta! Quam optio quibusdam praesentium. Minima beatae enim odit quos fugiat ab provident explicabo.',
+		details: ['+ More Details'],
+	},
+	{
+		id: 3,
+		img: '/project3.jpg',
+		name: 'Range Rover Evoque',
+		des: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero rem harum ut iure saepe maiores dicta! Quam optio quibusdam praesentium. Minima beatae enim odit quos fugiat ab provident explicabo.',
+		details: ['+ More Details'],
+	},
+	{
+		id: 4,
+		img: '/project4.jpg',
+		name: 'Ferrari 365 Daytona',
+		des: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero rem harum ut iure saepe maiores dicta! Quam optio quibusdam praesentium. Minima beatae enim odit quos fugiat ab provident explicabo.',
+		details: ['+ More Details'],
+	},
+	{
+		id: 5,
+		img: '/project5.jpg',
+		name: 'ZAZ-965',
+		des: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero rem harum ut iure saepe maiores dicta! Quam optio quibusdam praesentium. Minima beatae enim odit quos fugiat ab provident explicabo.',
+		details: ['+ More Details'],
+	},
+	{
+		id: 6,
+		img: '/project6.jpg',
+		name: 'ZAZ-968M',
+		des: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta vero rem harum ut iure saepe maiores dicta! Quam optio quibusdam praesentium. Minima beatae enim odit quos fugiat ab provident explicabo.',
+		details: ['+ More Details'],
+	},
+]
+
+export { countUpItems, navLinks, projects }
