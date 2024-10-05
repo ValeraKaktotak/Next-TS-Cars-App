@@ -20,4 +20,12 @@ type CountUpItemsProps = {
 	text: string
 }
 
-export { CountUpItemsProps, CountUpProps, NavLink, WrapperProps }
+type ProjectProps = {
+	id: number
+	img: string
+	name: string
+	des: string
+	details: string[]
+}
+
+export { CountUpItemsProps, CountUpProps, NavLink, ProjectProps, WrapperProps }
