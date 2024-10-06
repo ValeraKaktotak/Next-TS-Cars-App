@@ -28,4 +28,18 @@ type ProjectProps = {
 	details: string[]
 }
 
-export { CountUpItemsProps, CountUpProps, NavLink, ProjectProps, WrapperProps }
+type ServicesProps = {
+	id: number
+	title: string
+	icon: React.ReactNode
+	description: string
+}
+
+export {
+	CountUpItemsProps,
+	CountUpProps,
+	NavLink,
+	ProjectProps,
+	ServicesProps,
+	WrapperProps,
+}

@@ -14,7 +14,7 @@ import { smoothIn } from '@/shared/animate'
 const Cars = () => {
 	return (
 		<Wrapper>
-			<div className='flex flex-col pt-40 items-center text-center'>
+			<div className='flex flex-col pt-40 items-center text-center overflow-hidden'>
 				<motion.div
 					variants={smoothIn('up', 0.5)}
 					initial='hidden'
