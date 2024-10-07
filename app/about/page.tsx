@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 
 //Components
 import MyCountUp from '@/shared/components/CountUp'
-import Wrapper from '@/shared/components/Wrapper'
+import SocialWrapper from '@/shared/components/SocialWrapper'
 
 //Mocked data
 import { countUpItems } from '@/shared/Data/Data'
@@ -18,8 +18,8 @@ const About = () => {
 
 	return (
 		<>
-			<Wrapper>
-				<div className='flex flex-col gap-12 items-center justify-center mb-12 min-h-screen lg:flex-row lg:mb-0 pt-28 lg:pt-0 overflow-hidden'>
+			<SocialWrapper>
+				<div className='flex flex-col gap-12 items-center justify-center mb-12 min-h-screen lg:flex-row lg:mb-0 pt-28 lg:pt-0'>
 					<motion.div
 						variants={smoothIn('right', 0.5)}
 						initial='hidden'
@@ -82,7 +82,7 @@ const About = () => {
 						</div>
 					</motion.div>
 				</div>
-			</Wrapper>
+			</SocialWrapper>
 		</>
 	)
 }

@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 
 //Components
 import Car from '@/shared/components/Car'
-import Wrapper from '@/shared/components/Wrapper'
+import SocialWrapper from '@/shared/components/SocialWrapper'
 
 //Animation
 import { smoothIn } from '@/shared/animate'
 
 const Home = () => {
 	return (
-		<Wrapper className='text-center flex flex-col justify-center py-0'>
+		<SocialWrapper className='text-center flex flex-col justify-center py-0'>
 			{/* Red blur circle */}
 			<div className='bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w=[68.75rem]'></div>
 
@@ -75,7 +75,7 @@ const Home = () => {
 					</motion.div>
 				</div>
 			</div>
-		</Wrapper>
+		</SocialWrapper>
 	)
 }
 

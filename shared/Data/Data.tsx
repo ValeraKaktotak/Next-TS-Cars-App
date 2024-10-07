@@ -4,6 +4,7 @@ import type {
 	NavLink,
 	ProjectProps,
 	ServicesProps,
+	SkillsProps,
 } from '@/types'
 
 //Services Logos
@@ -147,4 +148,11 @@ const services: ServicesProps[] = [
 	},
 ]
 
-export { countUpItems, navLinks, projects, services }
+const skills: SkillsProps[] = [
+	{ name: 'Professional', level: 90 },
+	{ name: 'Available', level: 80 },
+	{ name: 'Comfortable', level: 95 },
+	{ name: 'International', level: 80 },
+]
+
+export { countUpItems, navLinks, projects, services, skills }

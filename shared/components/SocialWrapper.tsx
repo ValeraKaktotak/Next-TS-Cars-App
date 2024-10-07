@@ -3,9 +3,9 @@ import { FC, PropsWithChildren } from 'react'
 import { IoLogoGooglePlaystore, IoLogoSkype, IoMailOpen } from 'react-icons/io5'
 
 //Types
-import type { WrapperProps } from '@/types'
+import type { SocialWrapperProps } from '@/types'
 
-const Wrapper: FC<PropsWithChildren<WrapperProps>> = ({
+const SocialWrapper: FC<PropsWithChildren<SocialWrapperProps>> = ({
 	children,
 	className,
 }) => {
@@ -37,4 +37,4 @@ const Wrapper: FC<PropsWithChildren<WrapperProps>> = ({
 	)
 }
 
-export default Wrapper
+export default SocialWrapper
