@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 //Components
-import Wrapper from '@/shared/components/Wrapper'
+import SocialWrapper from '@/shared/components/SocialWrapper'
 
 //Mocked Data
 import { projects } from '@/shared/Data/Data'
@@ -13,13 +13,14 @@ import { smoothIn } from '@/shared/animate'
 
 const Cars = () => {
 	return (
-		<Wrapper>
-			<div className='flex flex-col pt-40 items-center text-center overflow-hidden'>
+		<SocialWrapper>
+			<div className='flex flex-col pt-40 items-center text-center'>
 				<motion.div
-					variants={smoothIn('up', 0.5)}
+					variants={smoothIn('down', 0.5)}
 					initial='hidden'
 					animate='show'
 					exit='hidden'
+					className=' overflow-hidden'
 				>
 					<div className='uppercase tracking-widest text-sm text-WhiteGray'>
 						-Exclusive Cars
@@ -80,7 +81,7 @@ const Cars = () => {
 					))}
 				</motion.div>
 			</div>
-		</Wrapper>
+		</SocialWrapper>
 	)
 }
 

@@ -1,4 +1,4 @@
-type WrapperProps = {
+type SocialWrapperProps = {
 	children: React.ReactNode
 	className?: string
 }
@@ -35,11 +35,17 @@ type ServicesProps = {
 	description: string
 }
 
+type SkillsProps = {
+	name: string
+	level: number
+}
+
 export {
 	CountUpItemsProps,
 	CountUpProps,
 	NavLink,
 	ProjectProps,
 	ServicesProps,
-	WrapperProps,
+	SkillsProps,
+	SocialWrapperProps,
 }

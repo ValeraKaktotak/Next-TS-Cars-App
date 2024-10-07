@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 
 //Components
-import Wrapper from '@/shared/components/Wrapper'
+import SocialWrapper from '@/shared/components/SocialWrapper'
 
 //Mocked Data
 import { services } from '@/shared/Data/Data'
@@ -12,11 +12,11 @@ import { smoothIn } from '@/shared/animate'
 
 const Services = () => {
 	return (
-		<Wrapper className='flex flex-col mt-24 justify-center'>
+		<SocialWrapper className='flex flex-col mt-24 justify-center'>
 			<div className='h-full overflow-hidden'>
 				<div className='text-center my-8 md:px-8'>
 					<motion.div
-						variants={smoothIn('up', 0.5)}
+						variants={smoothIn('down', 0.5)}
 						initial='hidden'
 						animate='show'
 						exit='hidden'
@@ -63,7 +63,7 @@ const Services = () => {
 					</motion.div>
 				</div>
 			</div>
-		</Wrapper>
+		</SocialWrapper>
 	)
 }
 
