@@ -1,6 +1,7 @@
 //Types
 import type {
 	CountUpItemsProps,
+	GalleryProps,
 	NavLink,
 	ProjectProps,
 	ServicesProps,
@@ -155,4 +156,43 @@ const skills: SkillsProps[] = [
 	{ name: 'International', level: 80 },
 ]
 
-export { countUpItems, navLinks, projects, services, skills }
+const gallery: GalleryProps[] = [
+	{
+		id: 1,
+		name: 'Lamborghini Urus',
+		image: '/7.jpg',
+		link: '',
+	},
+	{
+		id: 2,
+		name: 'Bentley Continental',
+		image: '/14.jpg',
+		link: '',
+	},
+	{
+		id: 3,
+		name: 'Rolls Royce Cullinan',
+		image: '/12.jpg',
+		link: '',
+	},
+	{
+		id: 4,
+		name: 'Bugatti Mistral W16',
+		image: '/9-1.jpg',
+		link: '',
+	},
+	{
+		id: 5,
+		name: 'Aston Martin DBX',
+		image: '/8-1.jpg',
+		link: '',
+	},
+	{
+		id: 6,
+		name: 'ZAZ-968M',
+		image: '/6-1.jpg',
+		link: '',
+	},
+]
+
+export { countUpItems, gallery, navLinks, projects, services, skills }

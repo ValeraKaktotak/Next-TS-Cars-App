@@ -40,9 +40,17 @@ type SkillsProps = {
 	level: number
 }
 
+type GalleryProps = {
+	id: number
+	name: string
+	image: string
+	link: string
+}
+
 export {
 	CountUpItemsProps,
 	CountUpProps,
+	GalleryProps,
 	NavLink,
 	ProjectProps,
 	ServicesProps,
