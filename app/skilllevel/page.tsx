@@ -14,7 +14,7 @@ import SocialWrapper from '@/shared/components/SocialWrapper'
 
 const SkillLevel = () => {
 	return (
-		<SocialWrapper className='text-center mt-24 flex flex-col justify-center'>
+		<SocialWrapper className='text-center mt-24 flex flex-col justify-center overflow-hidden'>
 			<div className='w-full h-full'>
 				<motion.div
 					variants={smoothIn('down', 0.2)}
@@ -55,6 +55,7 @@ const SkillLevel = () => {
 							initial='hidden'
 							animate='show'
 							exit='hidden'
+							className='lg:ml-8 lg:max-w-md w-full'
 						>
 							<Skills skills={skills} />
 						</motion.div>

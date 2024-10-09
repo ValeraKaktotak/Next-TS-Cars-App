@@ -51,7 +51,7 @@ const Navbar = () => {
 	return (
 		<header className='fixed w-full top-0 left-0 z-20'>
 			<nav
-				className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute top-0 left-0 right-0 ${
+				className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 absolute top-0 left-0 right-0 backdrop-blur-sm bg-white/30 ${
 					showMenu ? 'hidden' : ''
 				}`}
 			>

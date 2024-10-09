@@ -19,7 +19,7 @@ const About = () => {
 	return (
 		<>
 			<SocialWrapper>
-				<div className='flex flex-col gap-12 items-center justify-center mb-12 min-h-screen lg:flex-row lg:mb-0 pt-28 lg:pt-0'>
+				<div className='flex flex-col gap-12 items-center justify-center mb-12 min-h-screen lg:flex-row lg:mb-0 pt-28 lg:pt-0 overflow-hidden'>
 					<motion.div
 						variants={smoothIn('right', 0.5)}
 						initial='hidden'
