@@ -1,5 +1,6 @@
 //Types
 import type {
+	ContactsProps,
 	CountUpItemsProps,
 	GalleryProps,
 	NavLink,
@@ -195,4 +196,10 @@ const gallery: GalleryProps[] = [
 	},
 ]
 
-export { countUpItems, gallery, navLinks, projects, services, skills }
+const contacts: ContactsProps[] = [
+	{ id: 1, title: 'Address', text: 'Schoonboomstraat 109, Nederland' },
+	{ id: 2, title: 'Phone', text: 'Office: +123 4567 8901' },
+	{ id: 3, title: 'Available', text: 'Mon-Sat 9:00-23:00; Sunday closed' },
+]
+
+export { contacts, countUpItems, gallery, navLinks, projects, services, skills }
