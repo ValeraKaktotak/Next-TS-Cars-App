@@ -47,7 +47,14 @@ type GalleryProps = {
 	link: string
 }
 
+type ContactsProps = {
+	id: number
+	title: string
+	text: string
+}
+
 export {
+	ContactsProps,
 	CountUpItemsProps,
 	CountUpProps,
 	GalleryProps,
